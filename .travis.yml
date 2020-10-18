@@ -1,3 +1,4 @@
 language: java
 
-script: "cd ./Fibo2 && mvn package && mvn clean test"
+mvn install -DskipTests=true -Dmaven.javadoc.skip=true -B -V
+script: mvn clean verify
